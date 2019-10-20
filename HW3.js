@@ -119,7 +119,7 @@ function draw() {
 
     // if the snake eats the food
     if (snakeX == food.x && snakeY == food.y) {
-        score -= 50;
+        score -= 5;
         eat.play();
         food = {
             x: Math.floor(Math.random() * 17 + 1) * box,
