@@ -78,21 +78,25 @@ function draw() {
     if (snakeX < 2 * box) {
         box_x *= -1;
         score += 5;
+        left.play();
         change = true;
     }
     if (snakeX > 16 * box) {
         box_x *= -1;
         score += 5;
+        right.play();
         change = true;
     }
     if (snakeY < 4 * box) {
         box_y *= -1;
         score += 5;
+        up.play();
         change = true;
     }
     if (snakeY > 16 * box) {
         box_y *= -1;
         score += 5;
+        down.play();
         change = true;
     }
 

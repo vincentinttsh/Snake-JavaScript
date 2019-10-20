@@ -128,6 +128,7 @@ function draw() {
         down.play();
         box_y *= -1;
     }
+    
     // if the snake eats the food
     if (Eat_Food(food, snake)) {
         score += 5;
